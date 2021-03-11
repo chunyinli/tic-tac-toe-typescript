@@ -1,4 +1,6 @@
-export default function calculateWinner(squares) {
+type SquareValue = 'X' | 'O' | null;
+
+export default function calculateWinner(squares: Array<SquareValue>): SquareValue {
 	const lines = [
 		[0, 1, 2],
 		[3, 4, 5],
