@@ -2,13 +2,13 @@ import React from 'react';
 import Square from './square';
 
 type SquareValue = 'X' | 'O' | null;
-interface propsType {
+interface PropsType {
 	squares: Array<SquareValue>;
-	onClick: (i:Number) => void;
+	onClick: (i:number) => void;
 }
 
-class Board extends React.Component<propsType> {
-	renderSquare(i: number) {
+class Board extends React.Component<PropsType> {
+	renderSquare(i:number) {
 		return (
 			<Square
 				square={this.props.squares[i]}
